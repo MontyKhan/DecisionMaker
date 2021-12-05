@@ -82,3 +82,13 @@ not_top = options[second]
 
 print("\nWinner: " + first + " by " + str(top - not_top))
 print("Runner up: " + second + "\n")
+
+print("\n" + first + " perks:")
+for perk in perks:
+    if (perk.category == first):
+        print(perk.text + ": " + str(perk.value))
+
+print("\n" + second + " perks:")
+for perk in perks:
+    if (perk.category == second):
+        print(perk.text + ": " + str(perk.value))
